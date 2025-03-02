@@ -7,6 +7,8 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>Alexander</title>
     <link rel="icon" type="png" href="aleckomel.github.io/img/android-chrome-512x512-round.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
     <script src="./script.js"></script>
 </head>
 <body>
@@ -39,7 +41,7 @@
             </h2>
             <p></p>
             <div class="btn-sci">
-                <a href="#" class="btn">Secret</a>
+                <a href="./img/sanya6.mp4" class="btn glightbox" data-type="video">Secret</a>
                 <div class="sci">
                     <a href="https://www.instagram.com/aleckomel/"><i class='bx bxl-instagram'></i></a>
                     <a href="https://www.t.me/Riuuj"><i class='bx bxl-telegram'></i></a>
@@ -63,6 +65,16 @@
             <p>Create by danobez</p>
         </div>
     </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const lightbox = GLightbox({
+                selector: '.glightbox',
+                touchNavigation: true,
+                autoplayVideos: true
+            });
+        });
+    </script>
 
 </body>
 </html>
